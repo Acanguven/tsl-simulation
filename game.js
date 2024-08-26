@@ -527,7 +527,7 @@ function gameLoop() {
     console.log(canvas.height);
     ctx.fillStyle = "rgba(0, 0, 0, 0.7)";
     ctx.fillRect(0, canvas.height - 100, canvas.width, 50);
-    ctx.fillStyle = "yellow";
+    ctx.fillStyle = cardBanner.text.includes("Red") ? "red" : "yellow";
     ctx.font = "20px Arial";
     ctx.textAlign = "center";
     ctx.fillText(cardBanner.text, canvas.width / 2, canvas.height - 75);
